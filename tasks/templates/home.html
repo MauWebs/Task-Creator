@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/base-main.css' %}">
+</head>
+
+<body>
+
+    <main class="container py-5">
+
+        <section class="card card-body">
+
+            <h2 class="display-1 text-center">Django App</h2>
+
+            <p>
+                This is a "CRUD" application created with "Python" and its framework "Django", in which you can create,
+                read, update and delete tasks. You can also register with your own account with a password and a user
+                name.
+                Once registered you can log in again and close it whenever you want. Within the application you can view
+                the
+                tasks you have created and completed. As an additional feature you can highlight important tasks.
+            </p>
+
+            <div class="text-center">
+
+                <div>
+                    <a class="btn btn-dark col-8 ms-5 me-5 mt-3" href="signup/">
+                        Signup
+                    </a>
+                </div>
+
+                <div>
+                    <a class="btn btn-dark col-8 ms-5 me-5 mt-3" href="signin/">
+                        Signin
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
+
+{% endblock content %}
